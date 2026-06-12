@@ -10,7 +10,7 @@ export class LoginPage {
         await this.page.goto(data.Url);
     } async login(email: string, password: string) {
         await this.page.getByRole('button', { name: 'Login' }).click();
-        await this.page.getByPlaceholder('Enter Username').fill(data.Email);
+        await this.page.getByPlaceholder('Enter Username').pressSequentially(data.Email);
         await this.page.getByPlaceholder('Enter a password').fill(data.Password);
         await this.page.getByRole('button', { name: 'Login' }).click();
     }
@@ -18,3 +18,4 @@ export class LoginPage {
         return await this.page.getByRole('link', { name: 'Log out' }).isVisible();
     }
 }
+
