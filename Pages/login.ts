@@ -6,9 +6,10 @@ import data from '../Data/Data.json';
 export class LoginPage {
     constructor(public page: Page) {
     }
-    async navigateToLoginPage() {
+    async navigateToLoginPage(Url: string) {
         await this.page.goto(data.Url);
-    } async login(email: string, password: string) {
+    } 
+    async login(email: string, password: string) {
         await this.page.getByRole('button', { name: 'Login' }).click();
         await this.page.getByPlaceholder('Enter Username').pressSequentially(data.Email);
         await this.page.getByPlaceholder('Enter a password').fill(data.Password);

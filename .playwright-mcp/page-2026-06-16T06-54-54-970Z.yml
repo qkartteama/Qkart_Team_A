@@ -1,0 +1,32 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - link "QKart-icon" [ref=e7] [cursor=pointer]:
+      - /url: /
+      - img "QKart-icon" [ref=e8]
+    - generic [ref=e10]:
+      - textbox "Search for items/categories" [ref=e11]
+      - img [ref=e13]
+      - group
+    - generic [ref=e15]:
+      - button "Login" [ref=e16] [cursor=pointer]: Login
+      - button "Register" [ref=e17] [cursor=pointer]: Register
+  - generic [ref=e19]:
+    - paragraph [ref=e21]: India’ s FASTEST DELIVERY to your door step
+    - generic [ref=e22]:
+      - progressbar [ref=e23]:
+        - img [ref=e24]
+      - heading "Loading Products..." [level=4] [ref=e26]
+  - generic [ref=e27]:
+    - img "QKart-icon" [ref=e29]
+    - paragraph [ref=e30]: QKart is your one stop solution to the buy the latest trending items with India 's Fastest Delivery to your doorstep
+    - generic [ref=e31]:
+      - paragraph [ref=e32] [cursor=pointer]:
+        - link "Privacy policy" [ref=e33]:
+          - /url: privacy-policy
+      - paragraph [ref=e34] [cursor=pointer]:
+        - link "About us" [ref=e35]:
+          - /url: aboutus
+      - paragraph [ref=e36] [cursor=pointer]: Contact us
+      - paragraph [ref=e37] [cursor=pointer]:
+        - link "Terms of Service" [ref=e38]:
+          - /url: terms-of-service

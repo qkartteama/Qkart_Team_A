@@ -1,0 +1,2 @@
+[      78ms] [ERROR] Refused to execute script from 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' because its MIME type ('text/css') is not executable, and strict MIME type checking is enabled. @ https://crio-qkart-frontend-qa.vercel.app/:0
+[  205977ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://crio-qkart-frontend-qa.vercel.app/login:0
