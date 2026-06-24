@@ -11,7 +11,7 @@ import { ProductValidation } from '../../Pages/ProductValidation.ts';
 dotenv.config({ path: `./.env.${process.env.setenv}` });
 console.log(process.env.setenv + " env name")
 
-test('001_ProductValidation', async ({ page, context }) => {
+test('001_ProductValidation @smoke', async ({ page, context }) => {
   test.setTimeout(1500000);
 
   const records = parse(
@@ -45,4 +45,8 @@ await ProductValidationPage.verifyAddToCartButtonVisibility();
 //tc-07  Click on "Add to cart" button for "Roadster Mens Running Shoes"
 await ProductValidationPage.clickAddToCartButton();
 await page.pause();
+
+
+
+await page.screenshot({path:'screenshot/homepage.png',fullPage:true});
 });

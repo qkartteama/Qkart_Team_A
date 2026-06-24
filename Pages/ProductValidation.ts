@@ -44,6 +44,8 @@ export class ProductValidation{
     async clickAddToCartButton(){
         await this.addToCartButton.click();
     }
+
+    
     async verifyAddToCartButtonVisibility(){
         await expect(this.page.locator(this.addToCartButtonVisibility)).toBeVisible();
     }
